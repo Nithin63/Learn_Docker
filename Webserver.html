@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WEB SYSTEMS CS601</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">LETS LEARN DOCKER</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-12 text-center">
+            <h1 class="mt-5">Contenarization</h1>
+
+
+            <p> let’s see how we can build a web server image which can be used to build containers.
+
+                In our example, we are going to use the Apache Web Server on Ubuntu to build our image. Let’s follow the
+                steps given below, to build our web server Docker file.</p>
+
+            <b>Step 1- </b>
+            <p>The first step is to build our Docker File. Let’s use vim and create a Docker File with the following
+                information.</p>
+            FROM ubuntu <br>
+            RUN apt-get update<br>
+            RUN apt-get install –y apache2 <br>
+            RUN apt-get install –y apache2-utils<br>
+            RUN apt-get clean<br>
+            EXPOSE 80 CMD [“apache2ctl”, “-D”, “FOREGROUND”]<br>
+            <p>
+                The following points need to be noted about the above statements −<br>
+
+                We are first creating our image to be from the Ubuntu base image.<br>
+
+                Next, we are going to use the RUN command to update all the packages on the Ubuntu system.<br>
+
+                Next, we use the RUN command to install apache2 on our image.<br>
+
+                Next, we use the RUN command to install the necessary utility apache2 packages on our image.<br>
+
+                Next, we use the RUN command to clean any unnecessary files from the system.<br>
+
+                The EXPOSE command is used to expose port 80 of Apache in the container to the Docker host.<br>
+
+                Finally, the CMD command is used to run apache2 in the background.<br>
+
+                <img src="img/apache2.jpg" class="img-fluid" alt="Responsive image"><br>
+                <br>
+
+
+            </p>
+            <p>Now that the file details have been entered, just save the file.<br>
+
+                <b>Step 2 − </b> Run the Docker build command to build the Docker file. It can be done using the
+                following command −<br>
+
+                sudo docker build –t=”mywebserver” . </p>
+            We are tagging our image as mywebserver. Once the image is built, you will get a successful message that the
+            file has been built. <br>
+            <img src="img/my_web_servers.jpg" class="img-fluid" alt="Responsive image"><br>
+            <br>
+
+            <p><b>Step 3</b> − Now that the web server file has been built, it’s now time to create a container from the
+                image. We can do this with the Docker run command.</p>
+
+            sudo docker run –d –p 80:80 mywebserver <br>
+            <img src="img/docker_run_command.jpg" class="img-fluid" alt="Responsive image"><br>
+            <br>
+            <p>The following points need to be noted about the above command −br
+
+                The port number exposed by the container is 80. Hence with the –p command, we are mapping the same port
+                number to the 80 port number on our localhost.br
+
+                The –d option is used to run the container in detached mode. This is so that the container can run in
+                the background.br
+
+                If you go to port 80 of the Docker host in your web browser, you will now see that Apache is up and
+                running.</p>
+            <img src="img/apache_is_running.jpg" class="img-fluid" alt="Responsive image"><br>
+            <br>
+
+
+            <hr margin-left='auto' margin-right='auto' border-style='inset' width='40%' color='Black'>
+            <br>
+            <div class="row">
+
+            </div>
+        </div>
+
+        <!--  <ul class="list-unstyled">
+            <li>Bootstrap 4.5.0</li>
+            <li>jQuery 3.5.1</li>
+          </ul> -->
+    </div>
+</div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.slim.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+>
