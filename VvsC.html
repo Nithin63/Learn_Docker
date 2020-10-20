@@ -70,7 +70,7 @@
             development environment, mainly, as it saves time in the application testing cycle. On the other hand,
             virtual machines need to start the entire operating system, which includes the full boot process. This will
             also include the startup of the services, and it will take much longer than it would for a container.
-            Resources: Since virtual servers run separate operating systems, and every system call has to go through the
+            <h3>Resources:</h3> Since virtual servers run separate operating systems, and every system call has to go through the
             virtualization layer, a certain amount of overhead is created, causing more resources to be used. This is
             particularly true for memory usage, as virtual machines consume memory even when they aren’t running any
             user processes. However, CPU virtualization is relatively cheap, so the CPU overhead of a virtual machine
@@ -78,7 +78,7 @@
             consumption doesn’t increase. There is also much less overhead as they are using the same operating system
             without a hypervisor to go through.</p>
 
-            <p>Security and isolation: In regard to security and isolation, virtualization wins, as it keeps virtual
+            <p><h3>Security and isolation: </h3>In regard to security and isolation, virtualization wins, as it keeps virtual
             machines separate and isolated from each other. One infected virtual machine will not affect another one,
             and each virtual machine can incorporate its own security protocols since they are running in a fully
             isolated environment. However, since containers only isolate data and applications at the process level,
@@ -90,11 +90,12 @@
             of the image and is not that easy to share. Container images can be shared in any manner of ways, and there
             are a number of application sharing hubs on the internet. Virtual machine images do not have such
             centralized hubs and would usually need to be uploaded to another server instead.
-            Operating system requirements: A virtual machine is best used in the case when a business needs to run
+            <h3>Operating system requirements:</h3> <p>A virtual machine is best used in the case when a business needs to run
+
             multiple applications that require the full functionality of a dedicated operating system. However, if most
             of the applications have the same operating system requirements, the containers would be a much more
             practical solution.</p>
-            <p>Application lifecycle: Containers are highly suitable for short-term application needs, as they can be set
+            <p><h3>Application lifecycle:</h3> Containers are highly suitable for short-term application needs, as they can be set
             up quickly, are portable, and can be started up much faster. They are, however, limited by the lack of a
             dedicated operating system, processing, and storage resources. Containers should be used when the biggest
             priority is maximizing the number of applications running on a minimal amount of servers. However, virtual
