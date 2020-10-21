@@ -51,7 +51,7 @@
 
         <div class="col-lg-12 text-center">
             <h1 class="mt-5">Contenarization</h1>
-
+</div>
 
             <p> let’s see how we can build a web server image which can be used to build containers.
 
@@ -83,10 +83,10 @@
                 The EXPOSE command is used to expose port 80 of Apache in the container to the Docker host.<br>
 
                 Finally, the CMD command is used to run apache2 in the background.<br>
-
+<div class="col-lg-12 text-center">
                 <img src="img/apache2.jpg" class="img-fluid" alt="Responsive image"><br>
                 <br>
-
+</div>
 
             </p>
             <p>Now that the file details have been entered, just save the file.<br>
@@ -97,15 +97,19 @@
                 sudo docker build –t=”mywebserver” . </p>
             We are tagging our image as mywebserver. Once the image is built, you will get a successful message that the
             file has been built. <br>
+<div class="col-lg-12 text-center">
             <img src="img/my_web_servers.jpg" class="img-fluid" alt="Responsive image"><br>
             <br>
+          </div>
 
             <p><b>Step 3</b> − Now that the web server file has been built, it’s now time to create a container from the
                 image. We can do this with the Docker run command.</p>
 
             sudo docker run –d –p 80:80 mywebserver <br>
+            <div class="col-lg-12 text-center">
             <img src="img/docker_run_command.jpg" class="img-fluid" alt="Responsive image"><br>
             <br>
+          </div>
             <p>The following points need to be noted about the above command −br
 
                 The port number exposed by the container is 80. Hence with the –p command, we are mapping the same port
@@ -116,9 +120,10 @@
 
                 If you go to port 80 of the Docker host in your web browser, you will now see that Apache is up and
                 running.</p>
+                <div class="col-lg-12 text-center">
             <img src="img/apache_is_running.jpg" class="img-fluid" alt="Responsive image"><br>
             <br>
-
+</div>
 
             <hr margin-left='auto' margin-right='auto' border-style='inset' width='40%' color='Black'>
             <br>
@@ -131,7 +136,7 @@
             <li>Bootstrap 4.5.0</li>
             <li>jQuery 3.5.1</li>
           </ul> -->
-    </div>
+
 </div>
 </div>
 
@@ -142,4 +147,3 @@
 </body>
 
 </html>
->
