@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WEB SYSTEMS CS601</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">LETS LEARN DOCKER</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-12 text-center">
+            <h1 class="mt-5">Docker Connection</h1>
+<h2>Using Docker in PyCharm</h2>
+</div>
+
+            <div class="col-lg-12">
+              <p><h6>So make our project run using a PyCharm run configuration, we need to set the project interpreter to the Docker Compose service.
+                 We can do this from the Project interpreter page in preferences: Preferences | Project: Project Name | Project Interpreter.</h6></p>
+
+                 <p><h6>Click the little button next to the interpreter dropdown (the white one, not the blue one), and choose “Add Remote”. If you
+                   don’t see “Add Remote” here, you may be using PyCharm Community Edition, which doesn’t support remote interpreters.</h6></p>
+
+            <img src="img/docker.png" class="img-fluid" alt="Responsive image"><br>
+        <br>
+
+                <p>
+                  <h6>
+                  Now choose “docker-compose”, and almost everything will be pre-configured, I only had to add the `docker-compose.dev.yml`
+                  configuration to the list. We need to add it manually as this isn’t part of a standard docker project. You can do this with the ‘+’ button underneath the list of configuration files.</h6>
+                </p>
+
+                <img src="img/docker-2.png" class="img-fluid" alt="Responsive image"><br>
+            <br>
+
+            <p>
+            <h6>  Now, we should set up the path mapping. We are inserting all our project code into the container’s “/app” directory.
+              So let’s add this on the Project Interpreter screen, use the ‘…’ button next to the Path mappings field to change them.</h6>
+            </p>
+
+            <img src="img/docker-3.png" class="img-fluid" alt="Responsive image"><br>
+          <br>
+
+          <p>
+          <h6>  After you close the preferences window, you can just use the regular Run and Debug buttons to start and debug your project:</h6>
+          </p>
+
+          <img src="img/docker-4.png" class="img-fluid" alt="Responsive image"><br>
+        <br>
+
+        <p>
+        <h6>  To celebrate, let’s change “Hello World!” to “Hello from Docker within PyCharm!”</h6>
+        </p>
+
+        <img src="img/docker-5.png" class="img-fluid" alt="Responsive image"><br>
+      <br>
+      </div>
+
+
+
+          <hr margin-left='auto' margin-right='auto' border-style='inset' width='40%' color='Black'>
+            <br>
+
+    </div>
+
+  </div>
+  </div>
+<script src="vendor/jquery/jquery.slim.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
