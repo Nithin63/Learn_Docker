@@ -61,12 +61,12 @@
             <b>Step 1- </b>
             <p>The first step is to build our Docker File. Let’s use vim and create a Docker File with the following
                 information.</p>
-            FROM ubuntu <br>
+            <p>FROM ubuntu <br>
             RUN apt-get update<br>
             RUN apt-get install –y apache2 <br>
             RUN apt-get install –y apache2-utils<br>
             RUN apt-get clean<br>
-            EXPOSE 80 CMD [“apache2ctl”, “-D”, “FOREGROUND”]<br>
+                EXPOSE 80 CMD [“apache2ctl”, “-D”, “FOREGROUND”]<br></p>
             
 
         <p>We are first creating our image to be from the Ubuntu base image.</p>
