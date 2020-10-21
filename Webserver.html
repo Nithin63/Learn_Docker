@@ -50,7 +50,7 @@
     <div class="row">
 
         <div class="col-lg-12 text-center">
-            <h1 class="mt-5">Contenarization</h1>
+           
 </div>
 
             <p> let’s see how we can build a web server image which can be used to build containers.
@@ -68,23 +68,23 @@
             RUN apt-get clean<br>
             EXPOSE 80 CMD [“apache2ctl”, “-D”, “FOREGROUND”]<br>
             <p>
-                The following points need to be noted about the above statements −<br>
+                The following points need to be noted about the above statements </p>
 
-                We are first creating our image to be from the Ubuntu base image.<br>
+        <p>We are first creating our image to be from the Ubuntu base image.</p>
 
-                Next, we are going to use the RUN command to update all the packages on the Ubuntu system.<br>
+               <p> Next, we are going to use the RUN command to update all the packages on the Ubuntu system.</p>
 
-                Next, we use the RUN command to install apache2 on our image.<br>
+                <p>Next, we use the RUN command to install apache2 on our image.</p>
 
-                Next, we use the RUN command to install the necessary utility apache2 packages on our image.<br>
+               <p> Next, we use the RUN command to install the necessary utility apache2 packages on our image.</p>
 
-                Next, we use the RUN command to clean any unnecessary files from the system.<br>
+               <p> Next, we use the RUN command to clean any unnecessary files from the system.</p>
 
-                The EXPOSE command is used to expose port 80 of Apache in the container to the Docker host.<br>
+               <p> The EXPOSE command is used to expose port 80 of Apache in the container to the Docker host.</p>
 
-                Finally, the CMD command is used to run apache2 in the background.<br>
+               <p> Finally, the CMD command is used to run apache2 in the background.</p>
 <div class="col-lg-12 text-center">
-                <img src="img/apache2.jpg" class="img-fluid" alt="Responsive image"><br>
+                <img src="img/apache2.jpg" class="img-fluid" alt="Responsive image"></p>
                 <br>
 </div>
 
