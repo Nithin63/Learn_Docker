@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WEB SYSTEMS CS601</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">LETS LEARN DOCKER</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-12 text-center">
+            <h1 class="mt-5">Linux Commands</h1>
+
+            <h2>Basic Commands</h2>
+</div>
+<div class="col-lg-12">
+            <p><b>pwd</b> — When you first open the terminal, you are in the home directory of your user. To know which directory
+               you are in, you can use the “pwd” command. It gives us the absolute path, which means the path that starts from the root.
+                The root is the base of the Linux file system. It is denoted by a forward slash( / ). The user directory is usually something
+               like "/home/username".</p>
+<div class="col-lg-12 text-center">
+               <img src="img/pwd.jpg" class="img-fluid" alt="Responsive image"><br>
+               <br>
+               </div>
+
+            <p>
+                <b>ls</b> — Use the "ls" command to know what files are in the directory you are in. You can see all the hidden files by using the command “ls -a”.</p>
+<div class="col-lg-12 text-center">
+                <img src="img/ls.jpg"  class="img-fluid" alt="Responsive image"><br>
+                <br>
+                </div>
+            <p>
+                 <b>cd</b> — Use the "cd" command to go to a directory. For example, if you are in the home folder, and you want to go to the downloads folder, then you
+                can type in “cd Downloads”. Remember, this command is case sensitive, and you have to type in the name of the folder exactly as it is</p>
+<div class="col-lg-12 text-center">
+                <img src="img/cd.jpg" class="img-fluid" alt="Responsive image"><br>
+                <br>
+                </div>
+            <p>
+                <b>mkdir & rmdir</b> — Use the mkdir command when you need to create a folder or a directory. For example, if you want to make a directory called “DIY”,
+                then you can type “mkdir DIY”. Remember, as told before, if you want to create a directory named “DIY Hacking”, then you can type “mkdir DIY\ Hacking”.
+                Use rmdir to delete a directory. But rmdir can only be used to delete an empty directory. To delete a directory containing files, use rm.</p>
+
+<div class="col-lg-12 text-center">
+                <img src="img/mkdir.jpg" class="img-fluid" alt="Responsive image"><br>
+                <br>
+                </div>
+            <p>
+            <b>  rm </b>- Use the rm command to delete files and directories.  Use "rm -r" to delete just the directory. It deletes both the folder and the files it contains
+              when using only the rm command.</p>
+
+<div class="col-lg-12 text-center">
+            <img src="img/rm.jpg" class="img-fluid" alt="Responsive image"><br>
+            <br>
+</div>
+
+            <p> <b>touch</b> — The touch command is used to create a file. It can be anything, from an empty txt file to an empty zip file. For example, “touch new.txt”.</p>
+
+<div class="col-lg-12 text-center">
+            <img src="img/touch.jpg" class="img-fluid" alt="Responsive image"><br>
+            <br>
+            </div>
+            <p><b>man & --help</b> — To know more about a command and how to use it, use the man command. It shows the manual pages of the command. For example, “man cd” shows the
+               manual pages of the cd command. Typing in the command name and the argument helps it show which ways the command can be used (e.g., cd –help).</p>
+<div class="col-lg-12 text-center">
+               <img src="img/man.jpg" class="img-fluid" alt="Responsive image"><br>
+               <br>
+               </div>
+
+            <p>
+              <b>cp</b> — Use the cp command to copy files through the command line. It takes two arguments: The first is the location of the file to be copied, the second is where to copy
+            </p>
+
+<div class="col-lg-12 text-center">
+            <img src="img/cp.jpg" class="img-fluid" alt="Responsive image"><br>
+            <br>
+            </div>
+
+            <p>
+            <b>  mv</b> — Use the mv command to move files through the command line. We can also use the mv command to rename a file. For example, if we want to rename the file “text” to “new”, we can use “mv text new”. It takes the two arguments, just like the cp command.            </p>
+<div class="col-lg-12 text-center">
+            <img src="img/mv.jpg" class="img-fluid" alt="Responsive image"><br>
+            <br>
+            </div>
+
+
+            <p>
+            <b>  locate</b> — The locate command is used to locate a file in a Linux system, just like the search command in Windows. This command is useful when you don't know where a file is saved or the actual name of the file. Using the -i
+              argument with the command helps to ignore the case (it doesn't matter if it is uppercase or lowercase). So, if you want a file that has the word “hello”, it gives the list of all the files in your Linux system containing the
+              word "hello" when you type in “locate -i hello”. If you remember two words, you can separate them using an asterisk (*). For example, to locate a file containing the words "hello" and "this", you can use the command “locate -i *hello*this”.</p>
+<div class="col-lg-12 text-center">
+            <img src="img/locate.jpg" class="img-fluid" alt="Responsive image"><br>
+            <br>
+</div>
+
+            <p>
+            <b>  echo</b> — The "echo" command helps us move some data, usually text into a file. For example, if you want to create a new text file or add to an already made text file, you just need to type in, “echo hello, my name is alok >> new.txt”. You do not need to separate the spaces by using the backward slash here, because we put in two triangular brackets when we finish what we need to write.  </p>
+
+
+            <p>
+            <b>  cat</b> — Use the cat command to display the contents of a file. It is usually used to easily view programs.
+             </p>
+<div class="col-lg-12 text-center">
+            <img src="img/cat.jpg" class="img-fluid" alt="Responsive image"><br>
+            <br>
+</div>
+            <p>
+            <b>  sudo</b> — A widely used command in the Linux command line, sudo stands for "SuperUser Do". So, if you want any command to be done with administrative or root privileges, you can use the sudo command.
+              For example, if you want to edit a file like viz. alsa-base.conf, which needs root permissions, you can use the command – sudo nano alsa-base.conf. You can enter the root command line using the command “sudo bash”,
+              then type in your user password. You can also use the command “su” to do this, but you need to set a root password before that. For that, you can use the command “sudo passwd”(not misspelled, it is passwd). Then type in the new root password.             </p>
+
+<div class="col-lg-12 text-center">
+            <img src="img/sudo.jpg" class="img-fluid" alt="Responsive image"><br>
+            <br>
+</div>
+
+            <p>
+            <b>  apt-get </b>— Use apt to work with packages in the Linux command line. Use apt-get to install packages. This requires root privileges, so use the sudo command with it. For example, if you want to install the text editor jed (as I mentioned earlier), we can type in the command “sudo apt-get install jed”.
+              Similarly, any packages can be installed like this. It is good to update your repository each time you try to install a new package. You can do that by typing “sudo apt-get update”. You can upgrade the system by typing “sudo apt-get upgrade”. We can also upgrade the distro by typing “sudo apt-get dist-upgrade”. The command “apt-cache search” is used to search for a package. If you want to search for one, you can type in “apt-cache search jed”(this doesn't require root).             </p>
+<div class="col-lg-12 text-center">
+            <img src="img/apt.png" class="img-fluid" alt="Responsive image"><br>
+            <br>
+</div>
+            <p>
+            <b>  chmod</b> — Use chmod to make a file executable and to change the permissions granted to it in Linux. Imagine you have a python code named numbers.py in your computer. You'll need to run “python numbers.py” every time you need to run it. Instead of that, when you make it executable, you'll just need to run “numbers.py” in the terminal to run the file. To make a file executable, you can use the command “chmod +x numbers.py” in this case. You can use “chmod 755 numbers.py” to give it root permissions or “sudo chmod +x numbers.py” for root executable.             </p>
+
+<div class="col-lg-12 text-center">
+            <img src="img/chmod.png" class="img-fluid" alt="Responsive image"><br>
+            <br>
+            </div>
+</div>
+
+
+            <h2> Login into Docker Container</h2>
+            <br>
+            <p>
+            <h5>Attach to a Container </h5></p>
+
+          <p>
+            Although it is possible to run multiple processes in a container, most docker containers are running only a single process.
+            The command that is executed when starting a container is specified using the ENTRYPOINT and/or RUN instruction.
+          </p>
+          <p>
+            The docker attach command allows you to attach your terminal to the running container. This is useful when you want to see what
+            is written in the standard output in real-time, or to control the process interactively.
+          </p>
+
+          <p>To better understand how the attach command works let’s run a new detached Nginx container using the official Nginx image.</p>
+
+      <code>    <p><b>$ docker container run --name my_nginx -d -p 8080:80 nginx</b></p></code>
+
+
+
+      <p>    The -p 8080:80 option tells Docker to map port 80 in the container to port 8080 on the host machine.</p>
+
+        <p>  List the containers to make sure the “my_nginx” container is running:</p>
+
+      <code>  <p> <b>$ docker container ls</b><br></code>
+    <code>  <br>  <b>  CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                  NAMES
+          8e1c4974a8d8        nginx               "nginx -g 'daemon of…"   3 minutes ago       Up 2 seconds        0.0.0.0:8080->80/tcp   my_nginx</code></b></p>
+      <p>    Attach to the container using the container’s ID or name:<br></p><br>
+
+      <br><code>  <p><b>$ docker container attach my_nginx</b></p></code>
+        <p>  The default command of the nginx image which is executed when you run the container is set to CMD ["nginx", "-g", "daemon off;"]. When you run the attach command your terminal attaches to the nginx process.</p>
+
+        <p>  Open 127.0.0.1:8080 in your browser and you can watch the output of the nginx process in real time.</p>
+
+      <code>  <p>  <b>192.168.33.1 - - [04/Oct/2019:21:12:28 +0000] "GET / HTTP/1.1" 200 612 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" "-"
+          192.168.33.1 - - [04/Oct/2019:21:12:28 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://192.168.33.71:8080/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" "-"</b></p></code>
+      <p>    To get access to the container logs you should prefer using the docker logs command.</p>
+
+      <p>    To detach from the container without stopping it, use the CTRL-p CTRL-q key combination. Pressing CTRL-c stops the container.</p>
+
+        <p>  If the running processes you are attaching to accepts input, you can send instructions to it.</p><br>
+      <br>
+
+      <p>    The docker exec command allows you to run commands inside a running container.</p>
+
+        <p>  To see how the exec command works and how it can be used to enter the container shell, first, start a new container. We’ll use the official MySQL image:</p>
+
+  <code>    <p> <b> $ docker container run --name my_mysql -d mysql</b></p></code>
+      <p>    This will create a container named “my_mysql”.
+          To execute a command inside the container run the following command:</p>
+
+  <code>    <p>  <b>$ docker container exec -it my_mysql ls /var</b></p></code>
+      <p>    The -i option stands for interactive, and -t tells Docker to allocate a pseudo TTY device. The ls command will list all files and directories inside container’s /var directory:</p>
+
+    <code>  <p>   <b> backups  cache	lib  local  lock  log  mail  opt  run  spool  tmp</b></p></code>
+        <p>  To get a shell to the container i.e., to enter inside the container, start a new shell session by executing the shell binary. You can use sh, bash, or any other shell that is included in the image.</p>
+
+        <p>  The command below will create a new Bash session inside the container:</p>
+
+      <code>  <p><b> $ docker container exec -it my_mysql /bin/bash</b></p></code>
+        <p>  Your command prompt will change, indicating that you’re now working on the container shell.
+          From here, you can run commands in the same way as you would do on any other Linux server. For example, to get a list of the current environment variables type env:</p>
+
+    <code>    <p><b>  env</b></p></code>
+        <p>  The output will look something like this:</p>
+
+      <code>  <p><b>  HOSTNAME=e0214d97e0fe
+          MYSQL_ROOT_PASSWORD=my-secret-pw
+          PWD=/
+          HOME=/root
+          MYSQL_MAJOR=8.0
+          GOSU_VERSION=1.7
+          MYSQL_VERSION=8.0.17-1debian9
+          TERM=xterm
+          SHLVL=1
+          PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+          _=/usr/bin/env</b></code>
+</p>
+
+
+
+
+            <hr margin-left='auto' margin-right='auto' border-style='inset' width='40%' color='Black'>
+            <br>
+            <div class="row">
+
+            </div>
+        </div>
+
+        <!--  <ul class="list-unstyled">
+            <li>Bootstrap 4.5.0</li>
+            <li>jQuery 3.5.1</li>
+          </ul> -->
+    </div>
+</div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.slim.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
